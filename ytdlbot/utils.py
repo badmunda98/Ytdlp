@@ -28,6 +28,12 @@ import psutil
 from config import TMPFILE_PATH
 from flower_tasks import app
 
+
+# Define the path to the cookies.txt file based on the cloned repository's directory
+repo_folder = 'ytdlbot'  # Folder name from the cloned GitHub repository
+cookiefile = os.path.join(repo_folder, 'cookies.txt')
+
+
 inspect = app.control.inspect()
 
 
